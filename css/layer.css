@@ -1,0 +1,54 @@
+body {
+    background: url('../images/background.jpg') no-repeat;
+    background-size: cover;
+    
+}
+
+h1, .lead {
+    color: #ffffff;
+    text-align: center;
+}
+h1 { margin-top: 150px; }
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+._container {
+    width: 1200px;
+    box-sizing: border-box;
+    padding: 15px 0;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+
+.layer {
+    position: absolute;
+}
+
+.layer--1 {
+    top: 10%;
+    left: 20%;
+}
+
+.layer--2 {
+    top: 45%;
+    right: 10%;
+}
+
+.layer--3 {
+    bottom: 15%;
+    left: 43%;
+}
+
+.layer--4 {
+    bottom: 24%;
+    right: 38%;
+}
+
+.layer--5 {
+    bottom: 65%;
+    left: 50%;
+}
