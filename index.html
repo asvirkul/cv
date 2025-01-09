@@ -18,8 +18,12 @@
     <!-- Slider Styles -->
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/slick.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Framework -->
     <link rel="stylesheet" href="css/materialize.css">
+    
+
 </head>
 <body>
     
@@ -35,7 +39,8 @@
                     <li><a href="#canvas">Home</a></li>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
                 <a href="#" data-target="slide-out" class="sidenav-trigger .hide-on-med-and-up"><i class="material-icons">menu</i></a>
             </nav>
@@ -45,14 +50,15 @@
 
     <!-- Canvas Start -->
     <section class="canvas-wrapper scrollspy" id="canvas">
+        <div class="box"></div>
             <img src="images/strategy_8896255.png" alt="chess" class="layer layer--1 chess-knight" style="position: absolute; z-index: 5;" data-speed="10">
             <img src="images/quill-pen.png" alt="" class="layer layer--2 pen-float" style="position: absolute; z-index: 2; width: 140px;" data-speed="5">
         <div class="canvas-content row">
             
             <div class="canvas-text-wrapper col l5">
-                <h1>Howdy! My name is <span>Anton!</span></h1>
-                <p>And I'm applying to New York University in Prague.</p>
-                <a href="#about">Explore now <span class="line"></span></a>
+                <h1>Hello! My name is <span>Anton!</span></h1>
+                <p>I build responsive, fast, and visually stunning websites.</p>
+                <a href="#about">See My Work <span class="line"></span></a>
             </div>
             <div class="canvas-white-layer"></div>
             <div class="canvas-img-wrapper col l7">
@@ -65,16 +71,16 @@
     <!-- About Start -->
     <section class="about-wrapper scrollspy" id="about">
         <div class="about-content row">
-            <div class="about-img s12 l5 col">
+            <div class="about-img s12 l5 col" data-aos="fade-right">
                 <img src="images/me.JPG" alt="me 0_o">
             </div>
-            <div class="about-text s12 l7 col">
+            <div class="about-text s12 l7 col" data-aos="fade-left">
                 <h1>A bit <span class="bold">about me</span>...</h1>
-                <p>Greetings! My name is Svirkul Anton and I am writing to you with a motivation letter to apply for the Bachelor of Information Technology programme. I decided to make a small landing page with information about me, to avoid rather banal letters, to add some originality to my motivation letter, and to demonstrate some of my skills.  </p>
+                <p>Hello! I'm Anton Svirkul, a student of Information Technology at New York University in Prague and a web developer passionate about crafting functional and visually appealing websites. With a strong foundation in HTML, CSS, JavaScript, and WordPress, I specialize in building responsive and user-friendly sites.</p>
                 <div class="about-text-section row">
                     <article class="col s12 m6">
                         <h2 class="subtitle">My Goals</h2>
-                        <p>For me personally, I consider the choice of a higher education institution to be an important thing in the life of every individual. That is why one of my main goals is to get a quality education and to be able to apply my knowledge in the field of computer technology to implement new ideas.</p>
+                        <p>I strive to constantly improve my technical knowledge by working on a variety of projects. I focus on clean and beautiful code, modern design trends, and delivering results that truly exceed expectations. Also specialising in front-end and WordPress development, with a growing interest in back-end technologies.</p>
                     </article>
                     <article class="col s12 m6">
                         <h2 class="subtitle">My Skills</h2>
@@ -90,15 +96,15 @@
     <!-- Portfolio Grid Start -->
     <section class="portfolio-grid-wrapper scrollspy" id="portfolio">
         <div class="portfolio-content grid">
-            <div>
+            <div  data-aos="zoom-in-left">
                     <img src="images/Frame_1.png" alt="" class="grid-item materialboxed">
                     <a href="https://asvirkul.github.io/kobe/" class="button-read">View Website <span class="line"></span></a>
             </div>
-            <div>
+            <div data-aos="zoom-in-right">
                     <img src="images/Frame_2.png" alt="" class="grid-item materialboxed" data-caption="https://www.unity-world.com.ua/. Responsive design; HTML/CSS/JavaScript, CMS WordPress">
                     <a href="https://www.unity-world.com.ua/" class="button-read" target="_blank">View Website <span class="line"></span></a>
             </div>
-            <div>
+            <div  data-aos="zoom-in-up">
                     <img src="images/Frame_3.png" alt="" class="grid-item materialboxed" data-caption="https://asvirkul.github.io/Photographer/. Responsive Design. HTML/CSS/JavaScript">
                     <a href="https://asvirkul.github.io/Photographer/" class="button-read">View Website <span class="line"></span></a>
             </div>
@@ -107,53 +113,71 @@
     </section>
     <!-- Portfolio Grid End -->
 
-    <!-- Slider Start -->  
-    <section class="slider-wrapper scrollspy" id="photos">
-        <div class="slider-content row">
-            <article class="col s12 ml4 slider-text">
-                    <h1>More About My Life :)</h1>
-                    <p>This is a small selection of photos from my life in Kenya, where I spent 7 years, which made me even more convinced of the importance of information technology in the modern world and the need to develop it even in such distant countries..</p>
-            </article>
-            <div class="slider-items col s12 xl8">
-                <div class="slider-item">
-                    <img class="js-tilt" src="images/slider4.jpg" alt="">
-                    <article class="slider-subtitle">
-                        <p class="date">December 6th, 2023</p>
-                        <h2>Fairmont Safari Club, Mount Kenya </h2>
-                    </article>
+    <!-- Skills -->
+     <section class="skills-border scrollspy" id="skills">
+        <div class="skills-wrapper row">
+            <div class="skills-text s12 l6 col">
+                <h1>My <span class="bold">Skills</span></h1>
+                <p>I'm a passionate web developer who combines creative vision with technical skills to create unique digital solutions. I specialise in designing clean, responsive and visually appealing websites that are both functional and offer a great user experience.</p>
+                <p>I focus on front-end development with an emphasis on HTML5, CSS3, and JavaScript, creating visually appealing, modern designs that are responsive to user needs. My knowledge also extends to WordPress and WooCommerce, and I have experience in creating custom themes for online stores and blogs.</p>
+                <a href="about.html" class="button-read">Get In Touch<span class="line"></span></a>
+            </div>
+            <div class="skills-progress s12 l6 col">
+                <div class="progress-content">
+                    <span class="bold">Bootstrap/Materialize: Fast prototyping and modern UI frameworks.</span>
+                    <div class="bar">
+                        <span class="progress-dot"></span>
+                        <div class="progress-bar"data-progress="100"></div>
+                    </div>
                 </div>
-                <div class="slider-item">
-                    <img class="js-tilt" src="images/slider2.jpg" alt="">
-                    <article class="slider-subtitle">
-                        <p class="date">June 20th, 2022</p>
-                        <h2>Amboseli National Park</h2>
-                    </article>
+                <div class="progress-content">
+                    <span class="bold">HTML/CSS: Clean, semantic code for responsive designs.</span>
+                    <div class="bar">
+                        <span class="progress-dot"></span>
+                        <div class="progress-bar" data-progress="100"></div>
+                    </div>
                 </div>
-                <div class="slider-item">
-                    <img class="js-tilt" src="images/slider8.jpg" alt="">
-                    <article class="slider-subtitle">
-                        <p class="date">February 16th, 2024</p>
-                        <h2>Mara North Conservancy</h2>
-                    </article>
+                <div class="progress-content">
+                    <span class="bold">JavaScript: Interactive web experiences with dynamic content.</span>
+                    <div class="bar">
+                        <span class="progress-dot"></span>
+                        <div class="progress-bar" data-progress="100"></div>
+                    </div>
                 </div>
-                <div class="slider-item">
-                    <img class="js-tilt" src="images/slider5.jpg" alt="">
-                    <article class="slider-subtitle">
-                        <p class="date">May 15th, 2021</p>
-                        <h2>Masai Mara National Park</h2>
-                    </article>
+                <div class="progress-content">
+                    <span class="bold">GitHub: Version control and collaboration.</span>
+                    <div class="bar">
+                        <span class="progress-dot"></span>
+                        <div  class="progress-bar" data-progress="100"></div>
+                    </div>
                 </div>
-                <div class="slider-item">
-                    <img class="js-tilt" src="images/slider7.jpg" alt="">
-                    <article class="slider-subtitle">
-                        <p class="date">April 20th, 2019</p>
-                        <h2>Masai Mara National Reserve</h2>
-                    </article>
+                <div class="progress-content">
+                    <span class="bold">WordPress/WooCommerce: Custom theme development</span>
+                    <div class="bar">
+                        <span class="progress-dot"></span>
+                        <div  class="progress-bar" data-progress="100"></div>
+                    </div>
                 </div>
             </div>
-        </div><!-- slider-content -->
-    </section>
-    <!-- Slider End -->
+        </div>
+     </section>
+    <!-- Skills -->
+
+     <!-- Contact Form -->
+      <section class="contact-wrapper scrollspy" id="contacts">
+        <div class="contact-title">
+            <h2>Get <span class="bold">in touch</span></h2>
+            <p>Have a Question? Ask Away!</p>
+        </div>
+        <form id="contact-form">
+            <p><input type="text" id="name" name="name" placeholder="Your Name" required></p>
+            <p><input type="email" id="email" name="email" placeholder="Your Email" required></p>
+            <textarea name="message" placeholder="Your Message" id="message" required></textarea>
+            <button type="submit" class="button-read">Drop me a message! <span class="line"></span></button>
+            <p class="success-message hidden">✅ Your message has been sent successfully!</p>
+        </form>                       
+      </section>
+     <!-- Contact Form -->
 
     <!-- Footer Start -->
     <footer>
@@ -173,16 +197,36 @@
       </ul>
     <!-- Mobile Nav -->
 
+    <!-- Arrow up -->
+     <section class="arrow-up" id="scrollToTop">
+        <div class="arrow-content">
+            <img src="images/arrow-up.png" alt="arrow-up">
+        </div>
+            
+     </section>
+    <!-- Arrow up -->
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <!-- Framework Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Masonry -->
     <script src="js/masonry.pkgd.min.js"></script>
+    <!-- Validation -->
+    <script src="https://cdn.jsdelivr.net/npm/just-validate@2.2.0/dist/just-validate.production.min.js"></script>
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
     <!-- Slider -->
     <script src="js/slick.min.js"></script>
     <!-- Tilt -->
     <script src="js/tilt.jquery.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Script -->
     <script src="js/script.js"></script>
 </body>

@@ -96,10 +96,16 @@ header .header-content-wrapper .header-content-logo:hover .round-black {
 .canvas-wrapper .canvas-img-wrapper img {
     width: 100%;
 }
-.canvas-wrapper .canvas-text-wrapper h1 {
+.canvas-wrapper .canvas-text-wrapper h1 span {
     font-size: 75px;
     margin: 2.8rem 0 0.68rem 0;
     line-height: 90px;
+    background: linear-gradient(90deg, rgba(0,24,110,1) 0%, rgba(245,86,81,1) 100%, rgba(0,212,255,1) 100%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
 }
 .canvas-wrapper .canvas-text-wrapper h1 span {
     font-weight: 800;
@@ -244,6 +250,7 @@ span.bold {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 50px 0;
+    overflow: hidden !important;
 }
 .portfolio-content img {
     width: 100%;
@@ -339,6 +346,13 @@ button.slick-prev.slick-arrow  {
 }
 /* Slider End */
 
+/* box */
+*::selection {
+    background-color: #000;
+    color: #fff;
+}
+/* box */
+
 /* Footer Start */
 footer {
     padding: 20px 0;
@@ -380,6 +394,195 @@ p.bold {
 }
 
 /* Page About End */
+
+/* My Skills */
+.skills-wrapper h1 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+.skills-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-content {
+    font-family: 'Roboto Slab', sans-serif;
+}
+.skills-wrapper p {
+    font-family: 'Roboto Slab', sans-serif;
+    line-height: 26px;
+}
+.skills-wrapper a {
+    margin-top: 30px;
+    display: inline-block; 
+    font-family: serif;
+}
+.skills-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.bar {
+    height: 3px !important;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 10px;
+    position: relative;
+}
+.bar div {
+    width: 0;
+    height: 100%;
+    background-color: #000;
+}
+.progress-content {
+    margin: 20px 0;
+}
+.progress-dot {
+    width: 4px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    border-radius: 5px;
+}
+.progress-content span {
+    margin-bottom: 10px;
+    display: block;
+}
+.skills-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-wrapper img.layer {
+    right: -100px;
+    bottom: -60px;
+}
+.skills-border {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    padding-bottom: 40px;
+}
+/* My Skills */
+
+/* Arrow up */
+.arrow-up {
+    background: #000;
+    padding: 5px 2px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+    transition: all;
+    transition-duration: .5s;
+    
+}
+
+.visible {
+    opacity: 1;
+}
+.arrow-up img {
+    width: 80%;
+    margin: auto;
+}
+/* Arrow up */
+
+/* Contact */
+.contact-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.contact-title h2{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 4.2rem;
+}
+.contact-title {
+    text-align: center;
+}
+.contact-title p {
+    font-size: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+.contact-wrapper input {
+    padding: 20px 10px !important;
+    background-color: #F5F5F5 !important;
+    border: none !important;
+    height: unset !important;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    color: #4f4f4f;
+}
+.contact-wrapper input:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+.contact-wrapper textarea {
+    background-color: #F5F5F5;
+    border: none;
+    height: 200px !important;
+    resize: vertical;
+    display: block;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #4f4f4f;
+    width: 100%;
+    padding: 30px 10px;
+}
+.contact-wrapper textarea:focus {
+    border: none !important;
+    outline: none !important;
+}
+#contact-form {
+    max-width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+.contact-wrapper input::placeholder {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    color: #9E9E9E;
+    padding: 20px 10px;
+}
+.contact-wrapper textarea::placeholder {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #9E9E9E;
+}
+.success-message {
+    transition: all;
+    transition-duration: 1s;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.visible {
+    opacity: 1;
+}
+.hidden {
+    opacity: 0;
+}
+.just-validate-error-label {
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: block;
+}
+.contact-wrapper button {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+    border: none;
+}
+/* Contact */
 
 /* Media Start */
 @media (max-width:1600px) {
@@ -475,6 +678,13 @@ p.bold {
     .chess-knight {
         width: 100px !important;
     }
+    .skills-wrapper {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+    .skills-progress {
+        margin-top: 20px;
+    }
     .about-wrapper img {
         width: 70%;
         margin: auto;
@@ -520,6 +730,13 @@ p.bold {
     }
     .canvas-wrapper .chess-knight {
         top: 50px;
+    }
+    .canvas-wrapper .canvas-text-wrapper h1 span {
+        font-size: 50px;
+        line-height: 20px;
+    }
+    .canvas-wrapper .canvas-text-wrapper p {
+        line-height: 25px;
     }
 }
 @media (max-width:652px) {
