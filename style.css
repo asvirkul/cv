@@ -267,6 +267,9 @@ span.bold {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.portfolio-content [data-aos] {
+  transform: none !important;
+}
 /* Grid End */
 
 /* Slider Start */
