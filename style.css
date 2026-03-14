@@ -250,7 +250,6 @@ span.bold {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 50px 0;
-    overflow: hidden !important;
 }
 .portfolio-content img {
     width: 100%;
